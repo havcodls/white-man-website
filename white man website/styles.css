@@ -1,0 +1,158 @@
+/* By Havcodls */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    background: transparent;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .btns-sign{
+    margin-right: 30px;
+}
+
+nav .btns-sign button{
+    margin-left: 10px;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+nav .btn-sign-in{
+    background: transparent;
+    border: none;
+}
+
+nav .btn-sign-up{
+    background: #1a7ab8;
+    color: #fff;
+}
+
+nav .logo{
+    margin-left: 30px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+nav .logo span{
+    color: #1a7ab8;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .container-sec1{
+    background: transparent;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-sec1 h2{
+    font-size: 37px;
+}
+
+.container-sec1 h2 span{
+    color: #1a7ab8;
+}
+
+.container-sec1 p{
+    margin: 10px;
+}
+
+.container-sec1 button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: white; 
+    background-color: #1a7ab8; 
+    z-index: 1;
+    transition: 0.3s ease-out;
+
+}
+
+.container-sec1 button::before{
+    content: '';
+    background: black;
+    height: 150%;
+    border-radius: 30px;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-out;
+    z-index: -1;
+}
+
+.container-sec1 button:hover::before{
+    width: 100%;
+}
+
+main{
+    height: 200vh;
+    width: 100%;
+    background: transparent;
+}
+
+section .container-sec2{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.container-sec2 .img-round{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background: #fff;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 10px;
+    overflow: hidden;
+    
+}
+
+.container-container {
+    height: auto;
+    width: 100%;
+    background: #1a7ab8;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container-container p{
+    color: #fff;
+    margin: auto;
+
+}
