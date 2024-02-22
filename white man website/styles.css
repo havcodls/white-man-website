@@ -11,16 +11,19 @@
 
 body{
     scroll-behavior: smooth;
+    height: 300vh;
 }
 
 nav{
     position: fixed;
-    background: transparent;
+    top: 0;
+    background: #ffffff;
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 10;
 }
 
 nav .btns-sign{
@@ -43,6 +46,12 @@ nav .btn-sign-in{
 
 nav .btn-sign-up{
     background: #1a7ab8;
+    color: #fff;
+    transition: 0.3s ease-out;
+}
+
+nav .btn-sign-up:hover{
+    background: #0b578a;
     color: #fff;
 }
 
@@ -124,9 +133,11 @@ main{
 section .container-sec2{
     height: 100vh;
     width: 100%;
-    background: #fff;
+    background: transparent;
     display: flex;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .container-sec2 .img-round{
@@ -138,17 +149,27 @@ section .container-sec2{
     shape-outside: margin-box;
     margin: 0 10px;
     overflow: hidden;
+    transition: 0.4s ease-out;
+    
+}
+
+.container-sec2 .img-round:hover{
+    transform: scale(1.2) rotate(3deg)
     
 }
 
 .container-container {
-    height: auto;
-    width: 100%;
+    height:     540px;
+    width: 95%;
     background: #1a7ab8;
-    padding: 20px;
-    margin: 0 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 120vh;
+    transition: 0.7s ease-out;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .container-container p{
@@ -156,3 +177,44 @@ section .container-sec2{
     margin: auto;
 
 }
+
+.container-container button{
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.container-container .button-sect2{
+    background: transparent;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-container .text-button p{
+    margin-top: 60px;
+}
+
+@media (min-width: 1049px) {
+    .container-container .btn-sect2{
+        display: none;
+    }
+
+    
+}
+
+
