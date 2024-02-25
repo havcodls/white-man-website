@@ -1,3 +1,13 @@
+var btnScroll = document.querySelector('.scroll-btn');
+
+btnScroll.addEventListener('click', () => {
+    window.scrollTo({
+        top: 890,
+        behavior: "smooth"
+    });
+  });
+
+
 var btnn = document.querySelector(".btn-sect2");
 var container = document.querySelector(".container-container");
 var paragraphs = container.querySelectorAll("p");
@@ -25,3 +35,8 @@ btnn.addEventListener('click', () => {
     }
   }
 });
+
+
+
+
+
