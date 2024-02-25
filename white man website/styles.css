@@ -11,7 +11,8 @@
 
 body{
     scroll-behavior: smooth;
-    height: 300vh;
+    height: auto;
+    margin-bottom: 150vh;
 }
 
 nav{
@@ -137,7 +138,9 @@ section .container-sec2{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .container-sec2 .img-round{
@@ -159,13 +162,13 @@ section .container-sec2{
 }
 
 .container-container {
-    height:     540px;
+    height:     470px;
     width: 95%;
     background: #1a7ab8;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 120vh;
+    top: 50%;
     transition: 0.7s ease-out;
     padding: 40px;
     box-sizing: border-box;
@@ -215,6 +218,13 @@ section .container-sec2{
     }
 
     
+}
+
+.container-sec2 h2{
+    position: absolute;
+    top: 250px;
+    font-size: 39px;
+    font-weight: 500;
 }
 
 
